@@ -88,11 +88,11 @@
 static BOOL detect = YES;
 
 - (void)decoration {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Mit szeretnél tenni?"
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"MoseyCode detected!"
                                                                  delegate:self
-                                                        cancelButtonTitle:@"Tovább"
+                                                        cancelButtonTitle:@"Cancel"
                                                    destructiveButtonTitle:nil
-                                                        otherButtonTitles:@"Bankkártya letöltés", nil];
+                                                        otherButtonTitles:@"Do something", nil];
     actionSheet.cancelButtonIndex = 1;
     [actionSheet showInView:self.view];
 }
